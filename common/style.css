@@ -1,0 +1,17 @@
+.swiper {
+  width: 356px;
+  height: 444px;
+}
+
+@media only screen and (max-width: 600px) {
+  .swiper {
+    width: 300px;
+    height: 375px;
+  }
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
