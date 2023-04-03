@@ -1,0 +1,52 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language: \n"
+"Language-Team: \n"
+"Content-Type: \n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#: pages/examples.js:14
+msgid "Connect Wallet"
+msgstr "Connect Wallet"
+
+#: components/Header.js:17
+msgid "LXDAO"
+msgstr "LXDAO"
+
+#: sections/DemoSection.js:4
+msgid "demo-section"
+msgstr "demo-section"
+
+#: sections/SectionFinancing.js:6
+msgid "lxdao-financing-title"
+msgstr "Invest in LXDAO"
+
+#: sections/SectionVideo.js:6
+msgid "lxdao-intro-video-title"
+msgstr "Introduction"
+
+#: sections/SectionMission.js:6
+msgid "lxdao-mission-title"
+msgstr "LXDAO Mission"
+
+#: sections/SectionProjects.js:6
+msgid "lxdao-projects-title"
+msgstr "Projects"
+
+#: sections/SectionVision.js:8
+msgid "lxdao-vision-title"
+msgstr "Vision & Consensus"
+
+#: sections/SectionWeb3in2032.js:6
+msgid "lxdao-web3in2032-title"
+msgstr "Web3 in 2032"
+
+#: sections/SectionVision.js:9
+msgid "vision-content"
+msgstr "We believe that in 10 years, a billion people will use web3 products, technologies, and ideas."
