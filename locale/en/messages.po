@@ -15,19 +15,51 @@ msgstr ""
 #~ msgid "Connect Wallet"
 #~ msgstr "Connect Wallet"
 
+#: components/Download.js:23
+msgid "DOWNLOAD"
+msgstr "DOWNLOAD"
+
+#: sections/SectionHomepageHero.js:56
+msgid "LET ARTISTS GENERATE"
+msgstr "LET ARTISTS GENERATE"
+
 #: components/Header.js:17
 #~ msgid "LXDAO"
 #~ msgstr "LXDAO"
+
+#: sections/SectionHomepageHero.js:96
+msgid "Make NFT creation easy,"
+msgstr "Make NFT creation easy,"
 
 #: sections/SectionHomepageHero.js:152
 #: sections/SectionHomepageHero.js:162
 #~ msgid "Make NFT simpl,artists can easily handle it"
 #~ msgstr "Make NFT simpl,artists can easily handle it"
 
+#: sections/SectionWorkingGroup.js:31
+msgid "Make NFT simple,"
+msgstr "Make NFT simple,"
+
 #: sections/SectionHomepageHero.js:152
 #: sections/SectionHomepageHero.js:162
-msgid "Make NFT simple,artists can easily handle it"
-msgstr "Make NFT simple,artists can easily handle it"
+#~ msgid "Make NFT simple,artists can easily handle it"
+#~ msgstr "Make NFT simple,artists can easily handle it"
+
+#: sections/SectionWorkingGroup.js:21
+msgid "Our Adavantages"
+msgstr "Our Adavantages"
+
+#: sections/SectionHomepageHero.js:64
+msgid "THEIR OWN"
+msgstr "THEIR OWN"
+
+#: sections/SectionHomepageHero.js:99
+msgid "allowing artists to focus on creation"
+msgstr "allowing artists to focus on creation"
+
+#: sections/SectionWorkingGroup.js:39
+msgid "artists can easily handle it"
+msgstr "artists can easily handle it"
 
 #: sections/DemoSection.js:4
 #~ msgid "demo-section"
@@ -62,5 +94,5 @@ msgstr "Make NFT simple,artists can easily handle it"
 #~ msgstr "We believe that in 10 years, a billion people will use web3 products, technologies, and ideas."
 
 #: sections/SectionHomepageHero.js:118
-msgid "免费开源低代码"
-msgstr "免费开源低代码"
+#~ msgid "免费开源低代码"
+#~ msgstr "免费开源低代码"
