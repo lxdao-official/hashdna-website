@@ -15,18 +15,50 @@ msgstr ""
 #~ msgid "Connect Wallet"
 #~ msgstr ""
 
+#: components/Download.js:23
+msgid "DOWNLOAD"
+msgstr ""
+
+#: sections/SectionHomepageHero.js:56
+msgid "LET ARTISTS GENERATE"
+msgstr ""
+
 #: components/Header.js:17
 #~ msgid "LXDAO"
 #~ msgstr ""
+
+#: sections/SectionHomepageHero.js:96
+msgid "Make NFT creation easy,"
+msgstr ""
 
 #: sections/SectionHomepageHero.js:152
 #: sections/SectionHomepageHero.js:162
 #~ msgid "Make NFT simpl,artists can easily handle it"
 #~ msgstr ""
 
+#: sections/SectionWorkingGroup.js:31
+msgid "Make NFT simple,"
+msgstr ""
+
 #: sections/SectionHomepageHero.js:152
 #: sections/SectionHomepageHero.js:162
-msgid "Make NFT simple,artists can easily handle it"
+#~ msgid "Make NFT simple,artists can easily handle it"
+#~ msgstr ""
+
+#: sections/SectionWorkingGroup.js:21
+msgid "Our Adavantages"
+msgstr ""
+
+#: sections/SectionHomepageHero.js:64
+msgid "THEIR OWN"
+msgstr ""
+
+#: sections/SectionHomepageHero.js:99
+msgid "allowing artists to focus on creation"
+msgstr ""
+
+#: sections/SectionWorkingGroup.js:39
+msgid "artists can easily handle it"
 msgstr ""
 
 #: sections/DemoSection.js:4
@@ -62,5 +94,5 @@ msgstr ""
 #~ msgstr ""
 
 #: sections/SectionHomepageHero.js:118
-msgid "免费开源低代码"
-msgstr ""
+#~ msgid "免费开源低代码"
+#~ msgstr ""
