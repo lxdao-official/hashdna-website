@@ -38,7 +38,7 @@ const Button = ({ variant, children, ...rest }) => (
           : variant === 'gradient'
           ? rest.disabled
             ? 'linear-gradient(89.57deg, rgba(41,117,223,0.5) 0.27%, rgba(58,207,227,0.5) 105.82%)'
-            : 'linear-gradient(90deg, #305FE8 0%, #3AD9E3 100%)'
+            : 'linear-gradient(90deg, #23FF69FF 0%, #7FACFFFF 100%)'
           : '#000000',
       pointerEvents: rest.disabled ? 'none' : 'auto',
     }}

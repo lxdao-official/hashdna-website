@@ -1,7 +1,6 @@
 {
   "name": "hashdna-website",
   "private": true,
-
   "scripts": {
     "dev": "PORT=3003 next dev",
     "start-win": "set PORT=3003 && next dev",
@@ -21,10 +20,10 @@
     "@emotion/server": "^11.4.0",
     "@emotion/styled": "^11.9.3",
     "@iconify/react": "^4.1.0",
-    "@lingui/cli": "^3.13.2",
+    "@lingui/cli": "^3.17.2",
+    "@lingui/macro": "^3.17.2",
     "@lingui/core": "^3.13.2",
     "@lingui/loader": "^3.13.2",
-    "@lingui/macro": "^3.13.2",
     "@lingui/react": "^3.13.2",
     "@lxdao/img3": "^1.0.0",
     "@lxdao/uploader3": "^1.2.1",
@@ -44,6 +43,7 @@
     "graphql": "^16.6.0",
     "graphql-request": "^5.0.0",
     "ipfs-car": "^0.8.1",
+    "lxdao-ui": "^0.1.15",
     "make-plural": "^7.1.0",
     "next": "^12.0.7",
     "next-connect": "^0.12.2",
@@ -64,6 +64,7 @@
     "wagmi": "^0.6.3"
   },
   "devDependencies": {
+
     "babel-plugin-styled-components": "^2.0.7",
     "eslint": "^8.18.0",
     "eslint-config-next": "12.0.10",

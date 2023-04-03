@@ -155,7 +155,7 @@ const Footer = () => {
               width="147px"
               height="58px"
               component={'img'}
-              src={'/icons/lxdao-logo.svg'}
+              src={'/icons/hashdna-logo.png'}
             />
             <Typography
               variant="body1"
@@ -163,7 +163,7 @@ const Footer = () => {
               fontWeight={400}
               color="#666F85"
             >
-              LXDAO is an <span style={{ color: '#3C7AFF' }}>R&D</span>
+              HashDNA is an <span style={{ color: '#3C7AFF' }}>R&D</span>
               -focused DAO in Web3
             </Typography>
             <CommunityLinkGroup marginBottom={0} />
