@@ -1,13 +1,21 @@
 import React from 'react';
 import { useRouter } from 'next/router';
 import styled, { keyframes } from 'styled-components';
-import { Box, Typography, Link } from '@mui/material';
-
+import {Box, Typography, Link, Grid} from '@mui/material';
+import { makeStyles } from '@mui/styles';
+import { Card,CardMedia } from '@mui/material';
 import Button from '@/components/Button';
 import Container from '@/components/Container';
 import CommunityLinkGroup from '@/components/CommunityLinkGroup';
+import DownloadButton from '@/components/Download';
+import {BackgroundCarousel} from "@/components/BackgroundCarousel";
+import ImageCarousel from "@/components/ImageCarousel";
+import workingGroupsData from "@/common/content/workingGroups";
+import CarouselGroupsData from "@/common/content/CarouselGroups";
+import WorkingGroupCard from "@/components/WorkingGroupCard";
 // import ActivityNotification from '@/components/ActivityNotification';
 
+import { t } from '@lingui/macro';
 const textColorGradient = keyframes`
   0%{background-position:0% 50%}
   50%{background-position:100% 50%}
@@ -16,13 +24,13 @@ const textColorGradient = keyframes`
 
 const HightlightText = styled.span`
   background-size: 400% 400%;
-  background-image: linear-gradient(to right, #366eff, #23e5ff, #ff7fdb);
+  background-image: linear-gradient(to right, #c3ff36, #23ff69, #7facff);
   -webkit-background-clip: text;
   animation: ${textColorGradient} 10s ease infinite;
   color: transparent;
-  font-size: 98px;
-  line-height: 100px;
-  font-weight: 700;
+  font-size: 64px;
+  line-height: 90px;
+  font-weight: 800;
   @media screen and (max-width: 900px) {
     font-size: 4.902rem;
     line-height: 1.02;
@@ -34,17 +42,30 @@ const HightlightText = styled.span`
 `;
 
 const SectionHomepageHero = () => {
-  const router = useRouter();
+
   const Title = () => {
     return (
-      <Box marginTop="112px">
+      <Box >
         <Box>
-          <Typography variant="h1">LXDAO is an</Typography>
-          <HightlightText>R&amp;D</HightlightText>
-          <Typography variant="h1" display="inline">
-            -focused DAO
+
+          <Typography
+              variant="h2"
+              lineHeight={{ md: '68px', sm: '37px', xs: '37px' }}
+              fontWeight={800}
+          >
+            {t`LET ARTISTS GENERATE`}
+
           </Typography>
-          <Typography variant="h1">in Web3</Typography>
+          <Typography
+              variant="h2"
+              lineHeight={{ md: '68px', sm: '37px', xs: '37px' }}
+              fontWeight={800}
+          >
+            {t`THEIR OWN`}
+            <HightlightText>10000+NFT</HightlightText>
+          </Typography>
+
+
         </Box>
       </Box>
     );
@@ -55,7 +76,8 @@ const SectionHomepageHero = () => {
       minHeight={{ md: '800px', xs: '660px' }}
       display="flex"
       flexDirection={{ lg: 'row', xs: 'column' }}
-      justifyContent="flex-start"
+     /* justifyContent="flex-start"*/
+      justifyContent="center"
       alignItems="center"
       textAlign="center"
       gap={{ lg: '120px', xs: '40px' }}
@@ -64,38 +86,43 @@ const SectionHomepageHero = () => {
         display="flex"
         flexDirection="column"
         gap={6}
-        alignItems="flex-start"
-        textAlign="left"
+        alignItems="center"
+        textAlign="center"
       >
         <Title />
+
         <Box display={{ md: 'block', sm: 'none', xs: 'none' }}>
           <Typography variant="subtitle1" lineHeight="36px" color="#667085">
-            Focus on supporting valuable Web3 <strong>Public Goods</strong> and{' '}
-            <strong>Open Source</strong> sustainably.
+            {t`Make NFT creation easy,`}
           </Typography>
-        </Box>
-        <Box display={{ md: 'none', sm: 'block', xs: 'block' }}>
           <Typography variant="subtitle1" lineHeight="36px" color="#667085">
-            Focus on supporting valuable Web3 <strong>Public Goods</strong> and{' '}
-            <strong>Open Source</strong> sustainably.
+            {t`allowing artists to focus on creation`}
           </Typography>
         </Box>
-        <Link
-          href={`/joinus`}
-          color="#ffffff"
-          sx={{
-            textDecoration: 'none',
-          }}
-        >
-          <Button variant="gradient" width="180px" marginBottom={2}>
-            JOIN US
-          </Button>
-        </Link>
 
+
+
+        <DownloadButton/>
         <CommunityLinkGroup />
-        {/* <ActivityNotification /> */}
-      </Box>
+        {/*<ImageCarousel/>*/}
+      {/*  <Card>
+          <CardMedia
+              component="img"
+              sx={{ width: 800 }}
+              image="/images/background-1.jpg"
+              alt="Live from space album cover"
+          >\</CardMedia>
+
+
+        </Card>*/}
+
+        </Box>
+
     </Container>
+
+
+
+
   );
 };
 

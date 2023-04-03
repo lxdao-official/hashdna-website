@@ -1,6 +1,7 @@
 /* eslint-disable no-undef */
 import React from 'react';
 import Head from 'next/head';
+import { t } from '@lingui/macro';
 import { Box, CssBaseline } from '@mui/material';
 
 import Header from '@/components/Header';
@@ -23,12 +24,11 @@ export default function Layout({ children, title, description }) {
         <link rel="icon" href="/icons/favicon.png" />
         <title>
           {title ||
-            'LXDAO - Gather the power of buidlers to buidl and support “LX” (valuable) Web3 projects sustainably and welcome 1 billion users into Web3'}
+            'HasnDNA'}
         </title>
         <meta
           name="description"
-          content="LXDAO is an R&amp;D-focused DAO in Web3.
-Our mission: Gather the power of buidlers to buidl and support “LX” (valuable) Web3 projects sustainably and welcome 1 billion users into Web3."
+          content="HashDNA "
         />
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="website" />
@@ -38,7 +38,7 @@ Our mission: Gather the power of buidlers to buidl and support “LX” (valuabl
           property="og:description"
           content={
             description ||
-            'LXDAO is an R&D-focused DAO in Web3. Focus on supporting valuable Web3 Public Goods and Open Source sustainably. Gather the power of buidlers to buidl and support “LX” (valuable) Web3 projects sustainably and welcome 1 billion users into Web3.'
+            'HashDNA is an R&D-focused DAO in Web3. Focus on supporting valuable Web3 Public Goods and Open Source sustainably. Gather the power of buidlers to buidl and support “LX” (valuable) Web3 projects sustainably and welcome 1 billion users into Web3.'
           }
         />
         <meta property="og:url" content="https://lxdao.io/" />
