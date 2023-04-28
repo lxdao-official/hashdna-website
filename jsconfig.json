@@ -1,4 +1,5 @@
 {
+
   "compilerOptions": {
     "jsx": "preserve",
     "baseUrl": ".",
@@ -7,7 +8,7 @@
       "@/common/*": ["common/*"],
       "@/components/*": ["components/*"],
       "@/sections/*": ["sections/*"],
-      "@/utils/*": ["utils/*"],
+      "@/utils/*": ["utils/*"]
     }
   },
   "exclude": ["node_modules", ".next"]
