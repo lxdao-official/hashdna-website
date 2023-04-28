@@ -1,5 +1,5 @@
 import Button from "@/components/Button";
-import {Box, Link} from "@mui/material";
+import {Link} from "@mui/material";
 import React from "react";
 import { t } from '@lingui/macro';
 import styled from "styled-components";
@@ -19,7 +19,7 @@ return (
                 textDecoration: 'none',
             }}
         >
-            <Button variant="gradient" width="180px" marginBottom={2}>
+            <Button display={{ md: '160px', sm: '130px', xs: '100px' }} variant="gradient"  marginBottom={2}>
                 {t`DOWNLOAD`}
             </Button>
         </Link>

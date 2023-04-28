@@ -1,1 +1,22 @@
-/*eslint-disable*/module.exports={messages:JSON.parse("{\"Connect Wallet\":\"Connect Wallet\",\"LXDAO\":\"LXDAO\",\"Make NFT simpl,artists can easily handle it\":\"Make NFT simpl,artists can easily handle it\",\"Make NFT simple,artists can easily handle it\":\"Make NFT simple,artists can easily handle it\",\"demo-section\":\"demo-section\",\"lxdao-financing-title\":\"Invest in LXDAO\",\"lxdao-intro-video-title\":\"Introduction\",\"lxdao-mission-title\":\"LXDAO Mission\",\"lxdao-projects-title\":\"Projects\",\"lxdao-vision-title\":\"Vision & Consensus\",\"lxdao-web3in2032-title\":\"Web3 in 2032\",\"vision-content\":\"We believe that in 10 years, a billion people will use web3 products, technologies, and ideas.\",\"免费开源低代码\":\"免费开源低代码\"}")};
+/*eslint-disable*/
+module.exports = {
+    messages: {
+        'DOWNLOAD': 'Free Download',
+        'topSection-title-1': 'LET ARTISTS GENERATE',
+        'topSection-title-2': 'THEIR OWN',
+        'topSection-title-3': '10000+NFT',
+        'topSection-title-4': '\r',
+        'Make NFT creation easy,': 'Make NFT creation easy,',
+        'allowing artists to focus on creation': 'allowing artists to focus on creation',
+        'Our Adavantages': 'Our Adavantages',
+        'Make NFT simple,': 'Make NFT simple,',
+        'artists can easily handle it': 'artists can easily handle it',
+        'Generate metadata json file automatically': 'Generate metadata json file automatically',
+        'Rarity ranking': 'Rarity ranking',
+        'One-click naming': 'One-click naming',
+        'Support classification, layer order': 'Support classification, layer order',
+        'Re-numbering and re-ordering after filtering': 'Re-numbering and re-ordering after filtering',
+        'Auto-update': 'Auto-update',
+        'VIEW TUTORIAL VIDEO': 'VIEW TUTORIAL VIDEO'
+    }
+};

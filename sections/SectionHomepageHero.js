@@ -1,21 +1,13 @@
 import React from 'react';
-import { useRouter } from 'next/router';
 import styled, { keyframes } from 'styled-components';
-import {Box, Typography, Link, Grid} from '@mui/material';
-import { makeStyles } from '@mui/styles';
-import { Card,CardMedia } from '@mui/material';
-import Button from '@/components/Button';
+import {Box, Typography} from '@mui/material';
 import Container from '@/components/Container';
 import CommunityLinkGroup from '@/components/CommunityLinkGroup';
 import DownloadButton from '@/components/Download';
-import {BackgroundCarousel} from "@/components/BackgroundCarousel";
-import ImageCarousel from "@/components/ImageCarousel";
-import workingGroupsData from "@/common/content/workingGroups";
-import CarouselGroupsData from "@/common/content/CarouselGroups";
-import WorkingGroupCard from "@/components/WorkingGroupCard";
-// import ActivityNotification from '@/components/ActivityNotification';
+
 
 import { t } from '@lingui/macro';
+
 const textColorGradient = keyframes`
   0%{background-position:0% 50%}
   50%{background-position:100% 50%}
@@ -40,37 +32,53 @@ const HightlightText = styled.span`
     line-height: 1.02;
   }
 `;
-
+/*just solve react 152 */
 const SectionHomepageHero = () => {
-
   const Title = () => {
-    return (
-      <Box >
-        <Box>
+    const localeLang = localStorage.getItem('locale');
+    if (localeLang !== 'zh') {
+      return (
+          <Box >
+            <Box>
+              <Typography
+                  variant="h2"
+                  lineHeight={{ md: '68px', sm: '37px', xs: '37px' }}
+                  fontWeight={800}
+              >
+                {t`topSection-title-1`}
 
-          <Typography
-              variant="h2"
-              lineHeight={{ md: '68px', sm: '37px', xs: '37px' }}
-              fontWeight={800}
-          >
-            {t`LET ARTISTS GENERATE`}
+              </Typography>
+              <Typography
+                  variant="h2"
+                  lineHeight={{ md: '68px', sm: '37px', xs: '37px' }}
+                  fontWeight={800}
+              >
+                {t`topSection-title-2`}
+                <HightlightText>{t`topSection-title-3`}</HightlightText>
+                {t`topSection-title-4`}
+              </Typography>
+            </Box>
+          </Box>
+      );
+    } else if (localeLang === 'zh') {
+      return (
+          <Box >
+            <Box>
+              <Typography
+                  variant="h2"
+                  lineHeight={{ md: '68px', sm: '37px', xs: '37px' }}
+                  fontWeight={800}
+              >
+                  {t`topSection-title-1`}
+                  <HightlightText>{t`topSection-title-3`}</HightlightText>
+                  {t`topSection-title-4`}
+              </Typography>
+            </Box>
+          </Box>
+      );
+    }
 
-          </Typography>
-          <Typography
-              variant="h2"
-              lineHeight={{ md: '68px', sm: '37px', xs: '37px' }}
-              fontWeight={800}
-          >
-            {t`THEIR OWN`}
-            <HightlightText>10000+NFT</HightlightText>
-          </Typography>
-
-
-        </Box>
-      </Box>
-    );
   };
-
   return (
     <Container
       minHeight={{ md: '800px', xs: '660px' }}
@@ -82,6 +90,7 @@ const SectionHomepageHero = () => {
       textAlign="center"
       gap={{ lg: '120px', xs: '40px' }}
     >
+      <Box>
       <Box
         display="flex"
         flexDirection="column"
@@ -90,7 +99,6 @@ const SectionHomepageHero = () => {
         textAlign="center"
       >
         <Title />
-
         <Box display={{ md: 'block', sm: 'none', xs: 'none' }}>
           <Typography variant="subtitle1" lineHeight="36px" color="#667085">
             {t`Make NFT creation easy,`}
@@ -99,24 +107,12 @@ const SectionHomepageHero = () => {
             {t`allowing artists to focus on creation`}
           </Typography>
         </Box>
-
-
-
         <DownloadButton/>
         <CommunityLinkGroup />
-        {/*<ImageCarousel/>*/}
-      {/*  <Card>
-          <CardMedia
-              component="img"
-              sx={{ width: 800 }}
-              image="/images/background-1.jpg"
-              alt="Live from space album cover"
-          >\</CardMedia>
-
-
-        </Card>*/}
-
         </Box>
+        <Box display={{ md: 'block', sm: 'none', xs: 'none' }} component='img' src='/images/idea.png' margin='-110px  auto -60px auto'>
+        </Box>
+      </Box>
 
     </Container>
 

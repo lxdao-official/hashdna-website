@@ -1,7 +1,6 @@
 /* eslint-disable no-undef */
 import React from 'react';
 import Head from 'next/head';
-import { t } from '@lingui/macro';
 import { Box, CssBaseline } from '@mui/material';
 
 import Header from '@/components/Header';
@@ -21,7 +20,7 @@ export default function Layout({ children, title, description }) {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-        <link rel="icon" href="/icons/favicon.png" />
+        <link rel="icon" href="/icons/hashdna-logo.png" />
         <title>
           {title ||
             'HasnDNA'}
@@ -48,7 +47,6 @@ export default function Layout({ children, title, description }) {
           rel="stylesheet"
         />
 
-        {/* Global Site Tag (gtag.js) - Google Analytics */}
         <script
           async
           src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}

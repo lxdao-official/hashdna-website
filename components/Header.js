@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useRouter } from 'next/router';
 import { Box} from '@mui/material';
-
+import Language from '@/components/Language';
 import DownloadButton from '@/components/Download';
 
 const Header = () => {
@@ -33,9 +33,9 @@ const Header = () => {
 
         </Box>
 
-        <Box display="flex" gap="40px">
-          {/*<Language/>*/}
-          <DownloadButton/>
+        <Box display="flex" >
+            <DownloadButton/>
+            <Language/>
 
         </Box>
 

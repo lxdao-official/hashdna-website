@@ -1,36 +1,10 @@
 import React from 'react';
-import { useRouter } from 'next/router';
-import styled, { keyframes } from 'styled-components';
-import { Box, Typography, Link } from '@mui/material';
+import { Box, Typography} from '@mui/material';
 import Container from '@/components/Container';
-
-const textColorGradient = keyframes`
-  0%{background-position:0% 50%}
-  50%{background-position:100% 50%}
-  100%{background-position:0% 50%}
-`;
-
-const HightlightText = styled.span`
-  background-size: 400% 400%;
-  background-image: linear-gradient(to right, #c3ff36, #23ff69, #7facff);
-  -webkit-background-clip: text;
-  animation: ${textColorGradient} 10s ease infinite;
-  color: transparent;
-  font-size: 64px;
-  line-height: 90px;
-  font-weight: 800;
-  @media screen and (max-width: 900px) {
-    font-size: 4.902rem;
-    line-height: 1.02;
-  }
-  @media screen and (max-width: 600px) {
-    font-size: 3.5625rem;
-    line-height: 1.02;
-  }
-`;
+import { t } from '@lingui/macro';
 
 const SectionHomepageHero = () => {
-  const router = useRouter();
+
   const Title = () => {
     return (
       <Box >
@@ -42,7 +16,7 @@ const SectionHomepageHero = () => {
               lineHeight={{ md: '68px', sm: '37px', xs: '37px' }}
               fontWeight={800}
           >
-            VIEW TUTORIAL VIDEO
+            {t`VIEW TUTORIAL VIDEO`}
           </Typography>
         </Box>
 
