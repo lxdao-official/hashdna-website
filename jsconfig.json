@@ -1,13 +1,12 @@
 {
-
   "compilerOptions": {
     "jsx": "preserve",
     "baseUrl": ".",
     "paths": {
       "@/*": ["*"],
       "@/common/*": ["common/*"],
-      "@/components/*": ["components/*"],
       "@/sections/*": ["sections/*"],
+      "@/components/*": ["components/*"],
       "@/utils/*": ["utils/*"]
     }
   },
