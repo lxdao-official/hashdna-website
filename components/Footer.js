@@ -163,23 +163,9 @@ const Footer = () => {
               fontWeight={400}
               color="#666F85"
             >
-              HashDNA is an <span style={{ color: '#3C7AFF' }}>R&D</span>
-              -focused DAO in Web3
+              HashDNA is an
             </Typography>
             <CommunityLinkGroup marginBottom={0} />
-            <SignupFormWrapper theme={theme}>
-              <Mailchimp
-                action="https://lxdao.us12.list-manage.com/subscribe/post?u=4e96be73f764bc67c7f964f51&amp;id=eaa29be54b"
-                fields={[
-                  {
-                    name: 'EMAIL',
-                    placeholder: 'Email',
-                    type: 'email',
-                    required: true,
-                  },
-                ]}
-              />
-            </SignupFormWrapper>
           </Box>
         </Box>
       </Container>
