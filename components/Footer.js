@@ -1,5 +1,4 @@
 import React from 'react';
-import Mailchimp from 'react-mailchimp-form';
 import styled from 'styled-components';
 import { Box, Typography, Link, Grid } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
@@ -78,7 +77,31 @@ const Footer = () => {
         <Box
           display="flex"
           flexDirection={{ lg: 'row', md: 'column', xs: 'column' }}
+        ><Box
+            display="flex"
+            gap="24px"
+            flexDirection="column"
+            marginTop={{ lg: 0, md: 8, xs: 8 }}
+            flex={1}
         >
+            <Box
+                width="147px"
+                height="58px"
+                component={'img'}
+                src={'/icons/hashdna-logo.png'}
+            />
+            <Typography
+                variant="body1"
+                lineHeight="24px"
+                fontWeight={400}
+                color="#666F85"
+            >
+                HashDNA is an <span style={{ color: '#3C7AFF' }}>R&D</span>
+                -focused DAO in Web3
+            </Typography>
+            <CommunityLinkGroup marginBottom={0} />
+
+        </Box>
           <Grid container spacing={{ lg: 6, md: 12, xs: 12 }} flex={2}>
             <Grid item lg={4} md={4} xs={6}>
               <NavList
@@ -144,43 +167,7 @@ const Footer = () => {
               />
             </Grid>
           </Grid>
-          <Box
-            display="flex"
-            gap="24px"
-            flexDirection="column"
-            marginTop={{ lg: 0, md: 8, xs: 8 }}
-            flex={1}
-          >
-            <Box
-              width="147px"
-              height="58px"
-              component={'img'}
-              src={'/icons/hashdna-logo.png'}
-            />
-            <Typography
-              variant="body1"
-              lineHeight="24px"
-              fontWeight={400}
-              color="#666F85"
-            >
-              HashDNA is an <span style={{ color: '#3C7AFF' }}>R&D</span>
-              -focused DAO in Web3
-            </Typography>
-            <CommunityLinkGroup marginBottom={0} />
-            <SignupFormWrapper theme={theme}>
-              <Mailchimp
-                action="https://lxdao.us12.list-manage.com/subscribe/post?u=4e96be73f764bc67c7f964f51&amp;id=eaa29be54b"
-                fields={[
-                  {
-                    name: 'EMAIL',
-                    placeholder: 'Email',
-                    type: 'email',
-                    required: true,
-                  },
-                ]}
-              />
-            </SignupFormWrapper>
-          </Box>
+
         </Box>
       </Container>
     </Box>

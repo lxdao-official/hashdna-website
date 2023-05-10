@@ -4,11 +4,12 @@ const WorkingGroupCard = ({ image, name, link, hasBorder }) => {
   const localeLang = localStorage.getItem('locale');
   if (localeLang !== 'zh') {
     return (
-        <Grid item xs={12} sm={6} md={4} lg={4}>
+        <Grid item xs={11} sm={6} md={4} lg={4}>
           <Link href={link} sx={{ textDecoration: 'none' }} target="_blank">
             <Box
                 backgroundColor="#F5F5F5"
                 height="160px"
+
                 display="flex"
                 alignItems="center"
                 justifyContent="center"

@@ -8,6 +8,21 @@ import DownloadButton from '@/components/Download';
 
 import { t } from '@lingui/macro';
 
+
+const GlowingCircle = styled(Box)`
+  position: absolute;
+  width: 346.72px;
+  height: 310.98px;
+  left: 830px;
+  top: -100px;
+  border-radius: 50%;
+  background-image: linear-gradient(to bottom right, #3fcaff, #2be485);
+  opacity: 1;
+  filter: blur(180px);
+  z-index: -2;
+`;
+
+
 const textColorGradient = keyframes`
   0%{background-position:0% 50%}
   50%{background-position:100% 50%}
@@ -20,9 +35,9 @@ const HightlightText = styled.span`
   -webkit-background-clip: text;
   animation: ${textColorGradient} 10s ease infinite;
   color: transparent;
-  font-size: 64px;
+  font-size: 98px;
   line-height: 90px;
-  font-weight: 800;
+  font-weight: 700;
   @media screen and (max-width: 900px) {
     font-size: 4.902rem;
     line-height: 1.02;
@@ -39,19 +54,19 @@ const SectionHomepageHero = () => {
     if (localeLang !== 'zh') {
       return (
           <Box >
-            <Box>
+            <Box  >
               <Typography
-                  variant="h2"
-                  lineHeight={{ md: '68px', sm: '37px', xs: '37px' }}
-                  fontWeight={800}
+                  variant="h1"
+                  lineHeight={{ md: '120px', sm: '50px', xs: '37px' }}
+                  fontWeight={700}
               >
                 {t`topSection-title-1`}
 
               </Typography>
               <Typography
-                  variant="h2"
-                  lineHeight={{ md: '68px', sm: '37px', xs: '37px' }}
-                  fontWeight={800}
+                  variant="h1"
+                  lineHeight={{ md: '120px', sm: '37px', xs: '37px' }}
+                  fontWeight={700}
               >
                 {t`topSection-title-2`}
                 <HightlightText>{t`topSection-title-3`}</HightlightText>
@@ -63,11 +78,13 @@ const SectionHomepageHero = () => {
     } else if (localeLang === 'zh') {
       return (
           <Box >
-            <Box>
+            <Box  >
+            {/*<Box width={1318} high={120} >*/}
               <Typography
-                  variant="h2"
-                  lineHeight={{ md: '68px', sm: '37px', xs: '37px' }}
-                  fontWeight={800}
+                  variant="h1"
+                  lineHeight={{ md: '120px', sm: '37px', xs: '37px' }}
+                  fontWeight={600}
+
               >
                   {t`topSection-title-1`}
                   <HightlightText>{t`topSection-title-3`}</HightlightText>
@@ -81,7 +98,7 @@ const SectionHomepageHero = () => {
   };
   return (
     <Container
-      minHeight={{ md: '800px', xs: '660px' }}
+      minHeight={{ md: '1000px', xs: '660px' }}
       display="flex"
       flexDirection={{ lg: 'row', xs: 'column' }}
      /* justifyContent="flex-start"*/
@@ -89,6 +106,8 @@ const SectionHomepageHero = () => {
       alignItems="center"
       textAlign="center"
       gap={{ lg: '120px', xs: '40px' }}
+      style={{ paddingTop: '112px' }}
+
     >
       <Box>
       <Box
@@ -97,6 +116,7 @@ const SectionHomepageHero = () => {
         gap={6}
         alignItems="center"
         textAlign="center"
+
       >
         <Title />
         <Box display={{ md: 'block', sm: 'none', xs: 'none' }}>
@@ -109,9 +129,16 @@ const SectionHomepageHero = () => {
         </Box>
         <DownloadButton/>
         <CommunityLinkGroup />
+
         </Box>
-        <Box display={{ md: 'block', sm: 'none', xs: 'none' }} component='img' src='/images/idea.png' margin='-110px  auto -60px auto'>
+
+
+        <Box position="relative">
+          <GlowingCircle />
+          <Box zIndex={-1} display={{ md: 'block', sm: 'none', xs: 'none' }} component='img' src='/images/idea.png' ></Box>
         </Box>
+
+
       </Box>
 
     </Container>

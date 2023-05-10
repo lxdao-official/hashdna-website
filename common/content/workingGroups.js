@@ -20,7 +20,7 @@ const workingGroupsData = [
     link: '',
   },{
     image: '',
-    name: 'Re-numbering and re-ordering after filtering',
+    name: 'Re-numbering and re-ordering ',
     link: '',
   },{
     image: '',

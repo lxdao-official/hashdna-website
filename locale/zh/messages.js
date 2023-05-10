@@ -2,11 +2,11 @@
 module.exports = {
     messages: {
         'DOWNLOAD': '免费下载使用',
-        'topSection-title-1': '免费开源低代码',
+        'topSection-title-1': '开源低代码',
         'topSection-title-2': '\r',
         'topSection-title-3': 'NFT',
         'topSection-title-4': '创作神器',
-        'Make NFT creation easy,': '无需编程经验丶无需配置环境丶免费开源',
+        'Make NFT creation easy,': '无需编程经验、无需配置环境、免费开源',
         'allowing artists to focus on creation': '\r',
         'Our Adavantages': 'HashDNA 靓点',
         'Make NFT simple,': '完善的细节功能，',

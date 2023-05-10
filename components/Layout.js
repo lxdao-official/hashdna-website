@@ -20,7 +20,7 @@ export default function Layout({ children, title, description }) {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-        <link rel="icon" href="/icons/hashdna-logo.png" />
+        <link rel="icon" href="/icons/hashdna.svg" />
         <title>
           {title ||
             'HasnDNA'}
