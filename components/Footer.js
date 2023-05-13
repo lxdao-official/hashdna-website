@@ -1,9 +1,47 @@
 import React from 'react';
+import Mailchimp from 'react-mailchimp-form';
+import styled from 'styled-components';
 import { Box, Typography, Link, Grid } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 
 import Container from './Container';
 import CommunityLinkGroup from './CommunityLinkGroup';
+
+const SignupFormWrapper = styled.div`
+  & input,
+  & button {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  & input {
+    width: 270px;
+    height: 48px;
+    padding: 12px 14px;
+    margin-right: 16px;
+    border: 0.5px solid #d0d5dd;
+    border-radius: 6px;
+  }
+
+  & button {
+    background: linear-gradient(90deg, #305fe8 0%, #3ad9e3 100%);
+    padding: 12px 20px;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    color: #ffffff;
+    cursor: pointer;
+    line-height: 24px;
+  }
+  @media (max-width: 600px) {
+    & button {
+      margin-top: 20px;
+    }
+  }
+  & .msg-alert > p {
+    color: #00fb8c !important;
+  }
+`;
 
 const NavList = ({ title, items }) => (
   <Box display="flex" flexDirection="column">
@@ -125,9 +163,23 @@ const Footer = () => {
               fontWeight={400}
               color="#666F85"
             >
-              HashDNA is an
+              HashDNA is an <span style={{ color: '#3C7AFF' }}>R&D</span>
+              -focused DAO in Web3
             </Typography>
             <CommunityLinkGroup marginBottom={0} />
+            <SignupFormWrapper theme={theme}>
+              <Mailchimp
+                action="https://lxdao.us12.list-manage.com/subscribe/post?u=4e96be73f764bc67c7f964f51&amp;id=eaa29be54b"
+                fields={[
+                  {
+                    name: 'EMAIL',
+                    placeholder: 'Email',
+                    type: 'email',
+                    required: true,
+                  },
+                ]}
+              />
+            </SignupFormWrapper>
           </Box>
         </Box>
       </Container>

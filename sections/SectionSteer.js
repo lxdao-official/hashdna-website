@@ -7,14 +7,16 @@ const SectionHomepageHero = () => {
 
   const Title = () => {
     return (
-      <Box >
+      <Box>
         <Box>
 
-          <Box component={'img'} width="125px" src={"/images/codingboy.png"} />
+          <Box component={'img'} width="120px" src={"/images/codingboy.png"} />
           <Typography
               variant="h3"
               lineHeight={{ md: '68px', sm: '37px', xs: '37px' }}
               fontWeight={800}
+              width="1216"
+              style={{marginTop:24}}
           >
             {t`VIEW TUTORIAL VIDEO`}
           </Typography>
@@ -26,6 +28,7 @@ const SectionHomepageHero = () => {
   };
 
   return (
+      <Box width="100%" backgroundColor="#F6FFFB" >
     <Container
       minHeight={{ md: '800px', xs: '660px' }}
       display="flex"
@@ -35,6 +38,7 @@ const SectionHomepageHero = () => {
       alignItems="center"
       textAlign="center"
       gap={{ lg: '120px', xs: '40px' }}
+
     >
       <Box
         display="flex"
@@ -54,6 +58,7 @@ const SectionHomepageHero = () => {
 
       </Box>
     </Container>
+      </Box>
   );
 };
 

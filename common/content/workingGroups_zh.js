@@ -16,11 +16,11 @@ const workingGroupsData_zh = [
   },
   {
     image: '',
-    name: '支持分类,图层排序',
+    name: '支持分类，图层排序',
     link: '',
   },{
     image: '',
-    name: '筛图后重编号,重排序',
+    name: '筛图后重编号，重排序',
     link: '',
   },{
     image: '',

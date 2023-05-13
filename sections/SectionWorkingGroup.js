@@ -15,40 +15,51 @@ const SectionWorkingGroup = () => {
     if(localeLang === 'zh'){
         workingGroupsData = workingGroupsData_zh;
     }
-  return(<Box width="100%" backgroundColor="#4dcc9e">
+  return(
+      <Box width="100%"  style={{
+          background: "linear-gradient(to right, #24E77B 0%, #80BAFF 100%)",
+      }}>
 
-      <Container paddingY={{ md: '52px', xs: 8 }} margin="0 auto">
+      <Container paddingY={{ md: '97px', xs: 8 }} >
 
           <Typography paddingY={{ md: '15px', xs: 8 }} margin="0 auto"
                       variant="h6"
-                      lineHeight="8px"
+                      lineHeight="7px"
                       fontWeight="200"
                       color="#ffffff"
-                      marginBottom={8}
+                      marginBottom={9}
+                      style={{marginBottom:99,marginTop:32}}
           >
               {t`Our Adavantages`}
           </Typography>
 
-          <Typography
-              variant="h3"
-              lineHeight="38px"
-              fontWeight="600"
-              color="#ffffff"
-              marginBottom={8}
-          >
-              {t`Make NFT simple,`}
-          </Typography><Typography
-          variant="h3"
-          lineHeight="38px"
-          fontWeight="600"
-          color="#ffffff"
-          marginBottom={8}
-      >
-          {t`artists can easily handle it`}
-      </Typography>
+         <Box style={{ width: '1216px', height: '140px', marginBottom:49}}>
+
+             <Typography
+                 variant="h3"
+                 lineHeight="38px"
+                 fontWeight="500"
+                 color="#ffffff"
+                 marginBottom={2}
+             >
+                 {t`Make NFT simple,`}
+
+             </Typography>
+             <Typography
+                 variant="h3"
+                 lineHeight="38px"
+                 fontWeight="500"
+                 color="#ffffff"
+                 marginBottom={12}
+             >
+
+                 {t`artists can easily handle it`}
+             </Typography>
+         </Box>
 
 
-          <Grid container spacing={2}>
+
+          <Grid container spacing={3}>
               {workingGroupsData.length > 0 &&
               workingGroupsData.map((group, index) => {
                   return <WorkingGroupCard  key={index} {...group} />;

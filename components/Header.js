@@ -15,7 +15,7 @@ const Header = () => {
         alignItems="center"
         justifyContent="space-between"
         height={{ md: '128px', sm: '120px', xs: '120px' }}
-        maxWidth="1216px"
+        maxWidth="1730px"
         marginX={{ lg: 'auto', md: '20px', xs: '20px' }}
       >
         <Box
@@ -26,8 +26,9 @@ const Header = () => {
           display="flex"
         >
           <Box
-            width={{ md: '120px', sm: '120px', xs: '80px' }}
+            width={{ md: '193px', sm: '120px', xs: '80px' }}
             component={'img'}
+            style={{marginBottom:20}}
             src={'/icons/hashdna-logo.png'}
           />
 

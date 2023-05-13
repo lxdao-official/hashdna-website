@@ -17,6 +17,10 @@ export default class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head />
+        <link
+            href="/fonts/inter.css"
+            rel="stylesheet"
+        />
         <body>
           <Main />
           <NextScript />

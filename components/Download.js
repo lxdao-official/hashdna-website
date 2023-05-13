@@ -19,7 +19,7 @@ return (
                 textDecoration: 'none',
             }}
         >
-            <Button display={{ md: '160px', sm: '130px', xs: '100px' }} variant="gradient"  marginBottom={2}>
+            <Button width="180px"  variant="gradient"  marginBottom={2}>
                 {t`DOWNLOAD`}
             </Button>
         </Link>

@@ -38,7 +38,7 @@ const Language = () => {
 
     const LangNode = useCallback(() => {
         return (
-            <Box marginLeft="auto">
+            <Box marginLeft="20px">
                 <Button
                     aria-controls={open ? 'language-menu' : undefined}
                     aria-haspopup="true"
@@ -48,7 +48,7 @@ const Language = () => {
                     <Box display="flex">
                         <LanguageIcon
                             sx={{
-                                fontSize: '1.5rem',
+                                fontSize: '2.3rem',
                             }}
                         />
 
