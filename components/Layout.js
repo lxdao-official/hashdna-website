@@ -21,14 +21,8 @@ export default function Layout({ children, title, description }) {
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
         <link rel="icon" href="/icons/hashdna.svg" />
-        <title>
-          {title ||
-            'HasnDNA'}
-        </title>
-        <meta
-          name="description"
-          content="HashDNA "
-        />
+        <title>{title || 'HasnDNA'}</title>
+        <meta name="description" content="HashDNA " />
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="/images/logo.svg" />
@@ -69,6 +63,7 @@ export default function Layout({ children, title, description }) {
       <Box>
         <Header />
         <Box minHeight={'100vh'}>{children}</Box>
+        <div data-donate3-cid="bafkreigyrhetgqaw6gqdn57b5agommkeg6u7bto64qxodn6zxchyq3qomu"></div>
         <Footer />
       </Box>
     </>
